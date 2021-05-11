@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from '../styles/Market.module.css'
 
-import Header from '../components/header'
+import Layout from '../components/layout'
 import ArtCard from '../components/artCard'
 
 import artData from '../demoArt'
@@ -18,12 +18,6 @@ class Market extends React.Component {
 
   render() {
     return (
-
-      <div className={styles.container}>
-
-        <Header/>
-        {/* {artData.map(data => <p>{data.title}</p>)} */}
-
         <Grid container justify="center" spacing={3}>
           {artData.map(data => (
             <Grid item> {/*Add: key={data.title}     - This needs to be unique though, so doesnt work with current sample data */}
@@ -31,9 +25,6 @@ class Market extends React.Component {
             </Grid>
           ))}
         </Grid>
-
-      </div>
-
     );
   }
 }

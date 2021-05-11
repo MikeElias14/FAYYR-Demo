@@ -1,6 +1,6 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-import { grey, red, amber } from '@material-ui/core/colors';
+import { grey } from '@material-ui/core/colors';
 
 
 
@@ -11,15 +11,15 @@ const theme = createMuiTheme({
 
     primary: {
 
-      main: red[500],
+      main: grey[50],
 
     },
 
     secondary: {
 
-      main: amber[500],
+      main: grey[900],
 
-      contrastText: red[900],
+      contrastText: grey[50],
 
     },
 

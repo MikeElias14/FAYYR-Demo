@@ -1,0 +1,13 @@
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.branding {
+  margin-left: 3rem;
+}
+
+.navigation {
+  margin-right: 3rem;
+}
