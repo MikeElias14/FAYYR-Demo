@@ -30,8 +30,8 @@ class Header extends React.Component {
           {/* Navigation - Right */}
           <div className={styles.navigation}>
               <Button>
-                <Link href='/market'>
-                  Market
+                <Link href='/gallary'>
+                  Gallary
                 </Link>
               </Button>
             

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Card, CardContent } from '@material-ui/core';
 
@@ -17,12 +18,14 @@ class ArtCard extends React.Component {
         <CardContent>
           
           {/* Art */}
-          <Image
-            src={data.src}
-            layout="intrinsic"
-            height={500}
-            width={500}
-            />
+          <Link href={`/gallary/${data.id}`}>
+            <Image
+              src={data.src}
+              layout="intrinsic"
+              height={500}
+              width={500}
+              />
+            </Link>
 
           {/* Info */}
           <div className={styles.info}>
