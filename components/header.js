@@ -1,15 +1,54 @@
 
-import { AppBar, Toolbar } from "@material-ui/core";
+import React from 'react'
 
-export default function Header() {
+import Link from 'next/link'
 
-  const displayDesktop = () => {
-    return <Toolbar>Hi From Desktop Header</Toolbar>;
-  };
+// Material-ui imports
+import { AppBar, Toolbar, Button } from "@material-ui/core";
+
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   
-  return (
-    <header>
-      <AppBar>{displayDesktop()}</AppBar>
-    </header>
-  );
+  render() {
+    return (
+      <header>
+        <AppBar>
+          <Toolbar>
+
+            {/* Branding - Left */}
+            <div>
+              <h2>
+                <Link href='/'>
+                  FAYYR
+                </Link>
+              </h2>
+            </div>
+
+            {/* Navigation - Right */}
+              <div>
+                  <Button>
+                    <Link href='/market'>
+                      Market
+                    </Link>
+                  </Button>
+                
+                <Button>
+                  Charities
+                </Button>
+
+                <Button>
+                  Sign In
+                </Button>
+              </div>
+            
+
+          </Toolbar>
+        </AppBar>
+      </header>
+    );
+  }
 }
+
+export default Header
