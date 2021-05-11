@@ -1,13 +1,9 @@
-import React from "react";
+import React from 'react';
+import Image from 'next/image';
 
-import Card from "@material-ui/core/Card";
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from "@material-ui/core/CardContent";
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import Button from "@material-ui/core/Button";
+import { Card, CardContent } from '@material-ui/core';
 
-import styles from '../styles/Card.module.css'
+import styles from '../styles/ArtCard.module.css'
 
 class ArtCard extends React.Component {
   constructor(props) {
@@ -15,29 +11,28 @@ class ArtCard extends React.Component {
   }
 
   render() {
+    const { data } = this.props;
     return (
       <Card>
-        <CardMedia
-            className={styles.media}
-            image={this.props.data.src}
-            title={this.props.data.title}
-          />
         <CardContent>
-          <h4>Card title</h4>
-          <p>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </CardContent>
+          
+          {/* Art */}
+          <Image
+            src={data.src}
+            layout="intrinsic"
+            height={500}
+            width={500}
+            />
 
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
-        </CardActions>
+          {/* Info */}
+          <div className={styles.info}>
+            <h4>{ data.title }</h4>
+            <h4>{ data.artist }</h4>
+            <h4>{ data.charity }</h4>
+            <h4>{ data.price }</h4>
+            <p> { data.desc} </p>
+          </div>
+        </CardContent>
       </Card>
     );
   }

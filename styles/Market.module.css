@@ -1,0 +1,10 @@
+
+.content {
+  justify-content: center;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.item {
+  padding: 0 2rem;
+}

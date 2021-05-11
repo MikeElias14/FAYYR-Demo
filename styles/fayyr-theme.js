@@ -7,6 +7,7 @@ import { grey } from '@material-ui/core/colors';
 
 const theme = createMuiTheme({
 
+  // Color palette
   palette: {
 
     primary: {
@@ -24,6 +25,18 @@ const theme = createMuiTheme({
     },
 
   },
+
+  // Overrides
+
+  overrides: {
+
+    // Mui Card overrides
+    MuiCardContent: {
+      root: {
+        padding: "0px"
+      }
+    }
+  }
 
 });
 

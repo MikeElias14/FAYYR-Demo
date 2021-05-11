@@ -1,15 +1,14 @@
 import React from 'react'
 
+
+import Grid from '@material-ui/core/Grid';
+
 import styles from '../styles/Market.module.css'
 
 import Layout from '../components/layout'
 import ArtCard from '../components/artCard'
 
-import artData from '../demoArt'
-
-import Grid from '@material-ui/core/Grid';
-
-
+import artData from './api/demoArt'
 
 class Market extends React.Component {
   constructor(props) {
@@ -18,13 +17,15 @@ class Market extends React.Component {
 
   render() {
     return (
-        <Grid container justify="center" spacing={3}>
+      <div className={styles.content}>
+        <Grid container justify="space-between" spacing={10}>
           {artData.map(data => (
-            <Grid item> {/*Add: key={data.title}     - This needs to be unique though, so doesnt work with current sample data */}
+            <Grid item key={data.id} xs={12} md={6} lg={4} className={styles.item}>
               <ArtCard data = {data}/>
             </Grid>
           ))}
         </Grid>
+      </div>
     );
   }
 }
