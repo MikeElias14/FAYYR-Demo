@@ -21,7 +21,7 @@ class Layout extends React.Component {
         <Header/>
 
         <div className={styles.content}>
-          {children}
+            {children}
         </div>
 
     </div>

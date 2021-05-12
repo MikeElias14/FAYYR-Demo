@@ -18,7 +18,7 @@ class ArtCard extends React.Component {
         <CardContent>
           
           {/* Art */}
-          <Link href={`/gallary/${data.id}`}>
+          <Link href={`/market/${data.id}`}>
             <Image
               src={data.src}
               layout="intrinsic"
@@ -30,10 +30,9 @@ class ArtCard extends React.Component {
           {/* Info */}
           <div className={styles.info}>
             <h4>{ data.title }</h4>
-            <h4>{ data.artist }</h4>
-            <h4>{ data.charity }</h4>
-            <h4>{ data.price }</h4>
-            <p> { data.desc} </p>
+            <h5>{ data.artist }</h5>
+            <h5>{ data.charity }</h5>
+            <h5>{ data.price }</h5>
           </div>
         </CardContent>
       </Card>

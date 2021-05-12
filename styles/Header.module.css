@@ -1,11 +1,27 @@
-.flexContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.wrapper:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 97%;
+  border-bottom: 1px solid black;
 }
 
 .branding {
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .navigation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

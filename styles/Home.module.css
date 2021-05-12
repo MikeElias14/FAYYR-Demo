@@ -1,0 +1,18 @@
+.phrase {
+
+}
+
+.flexColumnWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flexColumn {
+  flex: 1;
+}
+
+.centerContent {
+  display: flex;
+  justify-content: center;
+}

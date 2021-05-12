@@ -1,12 +1,14 @@
 
-import React from 'react'
+import React from 'react';
+import { GoSearch } from 'react-icons/go';
 
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 
 // Material-ui imports
-import { AppBar, Toolbar, Button, Container } from "@material-ui/core";
+import { Toolbar, Button } from "@material-ui/core";
 
-import styles from '../styles/Header.module.css'
+import styles from '../styles/Header.module.css';
 
 class Header extends React.Component {
   constructor(props) {
@@ -15,37 +17,54 @@ class Header extends React.Component {
   
   render() {
     return (
-      // <AppBar> TODO: this makes the bar have 0 height, but makes it sticky. is there another way to make it sticky?
-        <Toolbar className={styles.flexContainer}>
+     
+      // Wrapper allows for bottom line
+      <div className={styles.wrapper}>
+
+        {/* Toolbar acts as flex container */}
+        <Toolbar className={styles.toolbar}>
 
           {/* Branding - Left */}
           <div className={styles.branding}>
             <h2>
               <Link href='/'>
-                FAYYR
+                <Image
+                  src='/fayyrLogo1.png'
+                  layout="intrinsic"
+                  height={28}
+                  width={66}
+                  />
               </Link>
             </h2>
           </div>
 
-          {/* Navigation - Right */}
+          {/* Navigation - middle */}
           <div className={styles.navigation}>
               <Button>
-                <Link href='/gallary'>
-                  Gallary
+                <Link href='/market'>
+                  market.
                 </Link>
               </Button>
             
             <Button>
-              Charities
+              charities.
             </Button>
 
             <Button>
-              Sign In
+              about.
+            </Button>
+          </div>
+
+          {/* Search - left */}
+          <div className={styles.search}>
+            <Button>
+              <GoSearch size="1.5em"/>
             </Button>
           </div>
 
         </Toolbar>
-      // </AppBar>
+
+      </div>
     );
   }
 }

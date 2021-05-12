@@ -3,12 +3,12 @@ import React from 'react'
 
 import Grid from '@material-ui/core/Grid';
 
-import styles from '../styles/Gallary.module.css'
+import styles from '../styles/Market.module.css'
 import ArtCard from '../components/artCard'
 
 import artData from './api/demoArt'
 
-class Gallary extends React.Component {
+class Market extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -28,4 +28,4 @@ class Gallary extends React.Component {
   }
 }
 
-export default Gallary;
+export default Market;
