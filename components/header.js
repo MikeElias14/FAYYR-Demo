@@ -29,7 +29,7 @@ class Header extends React.Component {
             <h2>
               <Link href='/'>
                 <Image
-                  src='/fayyrLogo1.png'
+                  src='/fayyrLogo_a.svg'
                   layout="intrinsic"
                   height={28}
                   width={66}
@@ -40,19 +40,26 @@ class Header extends React.Component {
 
           {/* Navigation - middle */}
           <div className={styles.navigation}>
+
+            <div className={styles.headerButton}>
               <Button>
                 <Link href='/market'>
-                  market.
+                  MARKET
                 </Link>
               </Button>
-            
-            <Button>
-              charities.
-            </Button>
+            </div>
 
-            <Button>
-              about.
-            </Button>
+            <div className={styles.headerButton}>
+              <Button>
+                Charities
+              </Button>
+            </div>
+
+            <div className={styles.headerButton}>
+              <Button>
+                About
+              </Button>
+            </div>
           </div>
 
           {/* Search - left */}
