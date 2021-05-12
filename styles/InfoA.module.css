@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,600;1,400&display=swap');
+
+
+.backgroundA {
+  padding-top: 3em;
+  padding-bottom: 15em;
+  background: url('../public/intro_a_background.svg') no-repeat;
+  background-size: cover;
+}
+
+.h1 {
+  font-family: IBM Plex Serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 104px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  padding: 2em 1em 2em 1.3em;
+}
+
+.i {
+  font-family: IBM Plex Serif;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 104px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.buttonWrapper {
+  margin-left: 3em;
+}
+
+.button {
+  height: 4em;
+}

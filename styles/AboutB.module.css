@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,600;1,400&display=swap');
+
+.wrapper {
+  margin-left: 6em;
+}
+.heading {
+  margin-top: 4em;
+  margin-bottom: 0
+}
+
+.backgroundA {
+
+  padding: 2em 0 16em 3em;
+  background: url('../public/about_b_background.svg') no-repeat;
+  background-size: cover;
+}
+
+.info {
+  padding: 8em 0 0 1em;
+  width: 18em;
+}
+
+.buttonWrapper {
+  margin: 2em 0 0 11em;
+}
+
+.button {
+  height: 4em;
+}

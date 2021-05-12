@@ -28,6 +28,7 @@ h1 {
   line-height: 62px;
   letter-spacing: 0em;
   text-align: left;  
+  margin-top: 24px;
   margin-bottom: 32px;
 } 
 
@@ -82,6 +83,18 @@ h5 {
   margin-bottom: 0px;
 }
 
+/* Titles on home page */
+h6 {
+  font-family: IBM Plex Serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;  
+  margin-bottom: 16px;
+}
+
 /* Artists, other text */
 p {
   font-family: Raleway;
@@ -92,4 +105,15 @@ p {
   letter-spacing: 0em;
   text-align: left;  
   margin-top: 8px;
+}
+
+/* Buttons used around the site */
+buttonText {
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.08em;
+  text-align: center;
 }

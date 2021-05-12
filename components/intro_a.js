@@ -1,24 +1,25 @@
 
+import Link from 'next/link';
 import { Button } from '@material-ui/core';
 
-
-// All home page dmeo components will use styles from the Home.module for simplicity
-import styles from '../styles/Home.module.css';
+import styles from '../styles/InfoA.module.css';
 
 export default function IntroA() {
   return (
-    <div>
+    <div className={styles.backgroundA}>
+      <div className={styles.h1}>
+        Art that makes <br/> a <i className={styles.i}>difference</i>
 
-      <div>
-
-        <h1 className={styles.phrase}>
-          <b> art that makes <br/> a </b> <i>difference</i>
-        </h1>
-        <Button> 
-          Start your collection
+      <div className={styles.buttonWrapper}>
+        <Button variant="outlined" color="secondary" className={styles.button}>
+          <Link href='/market'> 
+            <buttonText> Start your collection </buttonText>
+          </Link>
         </Button>
+      </div>
 
       </div>
+
     </div>
   )
 }
