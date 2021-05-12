@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600&family=Raleway:wght@400;600&display=swap');
+
 html,
 body {
   padding: 0;
@@ -16,3 +18,69 @@ a {
 }
 
 /* Style guide */
+
+/* Page headers */
+h1 {
+  font-family: IBM Plex Serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: 0em;
+  text-align: left;  
+  margin-bottom: 32px;
+} 
+
+/* Titles */
+h2 {
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;  
+  margin: 16px 64px 0 0;
+}
+
+/* Prices, other importiant info */
+h3 {
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+/* Charities */
+h4 {  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #73968D;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+h5 {
+
+}
+
+/* Artists, other text */
+p {
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;  
+  margin-top: 8px;
+}

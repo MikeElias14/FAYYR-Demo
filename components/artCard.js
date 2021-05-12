@@ -2,7 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from '../styles/ArtCard.module.css'
+import { FaCheckCircle } from 'react-icons/fa';
+
+import styles from '../styles/ArtCard.module.css';
 
 class ArtCard extends React.Component {
   constructor(props) {
@@ -26,9 +28,14 @@ class ArtCard extends React.Component {
 
         {/* Info */}
         <div className={styles.info}>
-          <h3>{ data.title }</h3>
-          <p>{ data.artist }</p>
-          <p> <b>{ data.price } N </b> - ${ data.price * 5 } to { data.charity } </p>
+          <div className={styles.inline}>
+            <h2 className={styles.textOverflow}>{ data.title }</h2>
+            <h3>{ data.price }&nbsp;N&nbsp;</h3>
+          </div>
+          
+          <p> By @{ data.artist }</p>
+          <h4> <FaCheckCircle/> Supporting { data.charity } </h4>
+
         </div>
       </div>
     );
