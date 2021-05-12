@@ -16,13 +16,11 @@ class Market extends React.Component {
   render() {
     return (
       <div className={styles.content}>
-        <Grid container justify="space-between" spacing={10}>
           {artData.map(data => (
-            <Grid item key={data.id} xs={12} md={6} lg={4} className={styles.item}>
+            <div className={styles.card}>
               <ArtCard data = {data}/>
-            </Grid>
+            </div>
           ))}
-        </Grid>
       </div>
     );
   }

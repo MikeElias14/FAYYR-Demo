@@ -2,8 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Card, CardContent } from '@material-ui/core';
-
 import styles from '../styles/ArtCard.module.css'
 
 class ArtCard extends React.Component {
@@ -14,28 +12,25 @@ class ArtCard extends React.Component {
   render() {
     const { data } = this.props;
     return (
-      <Card>
-        <CardContent>
+      <div className={styles.card}>
           
-          {/* Art */}
-          <Link href={`/market/${data.id}`}>
-            <Image
-              src={data.src}
-              layout="intrinsic"
-              height={500}
-              width={500}
-              />
-            </Link>
+        {/* Art */}
+        <Link href={`/market/${data.id}`}>
+          <Image
+            src={data.src}
+            layout="intrinsic"
+            height={data.height}
+            width={data.width}
+            />
+          </Link>
 
-          {/* Info */}
-          <div className={styles.info}>
-            <h4>{ data.title }</h4>
-            <h5>{ data.artist }</h5>
-            <h5>{ data.charity }</h5>
-            <h5>{ data.price }</h5>
-          </div>
-        </CardContent>
-      </Card>
+        {/* Info */}
+        <div className={styles.info}>
+          <h3>{ data.title }</h3>
+          <p>{ data.artist }</p>
+          <p> <b>{ data.price } N </b> - ${ data.price * 5 } to { data.charity } </p>
+        </div>
+      </div>
     );
   }
 }
