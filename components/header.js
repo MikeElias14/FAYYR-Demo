@@ -44,20 +44,20 @@ class Header extends React.Component {
             <div className={styles.headerButton}>
               <Button>
                 <Link href='/market'>
-                  MARKET
+                  <h5> Market </h5>
                 </Link>
               </Button>
             </div>
 
             <div className={styles.headerButton}>
               <Button>
-                Charities
+                <h5> Charities </h5>
               </Button>
             </div>
 
             <div className={styles.headerButton}>
               <Button>
-                About
+                <h5> About </h5>
               </Button>
             </div>
           </div>

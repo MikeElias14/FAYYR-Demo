@@ -69,8 +69,17 @@ h4 {  font-family: Raleway;
   margin-bottom: 32px;
 }
 
+/* Header */
 h5 {
-
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 16px;
+  margin-bottom: 0px;
 }
 
 /* Artists, other text */
