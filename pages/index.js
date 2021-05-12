@@ -4,9 +4,10 @@ import styles from '../styles/Home.module.css';
 // Demo components
 import IntroA from '../components/intro_a';
 import AboutA from '../components/about_a';
-import PartnersA from '../components/partners_a';
-import FeatureA from '../components/feature_a';
 import AboutB from '../components/about_b';
+import PartnersA from '../components/partners_a';
+import PartnersB from '../components/partners_b';
+import FeatureA from '../components/feature_a';
 
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
       <AboutB/>      
     
       {/* Partners Section */}
-      <PartnersA/>
+      <PartnersB/>
 
 
 

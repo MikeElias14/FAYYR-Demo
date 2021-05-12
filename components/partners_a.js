@@ -2,15 +2,13 @@
 import Image from 'next/image';
 import { Button } from '@material-ui/core';
 
-
-// All home page dmeo components will use styles from the Home.module for simplicity
-import styles from '../styles/Home.module.css';
+import styles from '../styles/PartnersA.module.css';
 
 export default function PartnersA() {
   return (
-    <div>
+    <div className={styles.wrapper}>
 
-      <h3> our partners. </h3>
+      <h1> Our partners. </h1>
 
       {/* Row */}
       <div className={styles.flexColumnWrapper}>
@@ -67,9 +65,9 @@ export default function PartnersA() {
 
       </div>
 
-      <div className={styles.centerContent}>
-        <Button>
-          See All
+      <div className={styles.buttonWrapper}>
+        <Button variant="outlined" color="secondary" className={styles.button}>
+          <buttonText> See all </buttonText>
         </Button>
       </div>
 
