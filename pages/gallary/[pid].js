@@ -24,13 +24,13 @@ function ArtDetails() {
       <div className={styles.flexRow}>
 
         {/* Column: Art info */}
-        <div className={styles.column}>
+        <div className={styles.infoColumn}>
           <h2> { data.title } </h2>
           <p> { data.desc } </p>
         </div>
 
         {/* Column: Art itself */}
-        <div className={styles.column}>
+        <div className={styles.artColumn}>
           <Image
                 src={data.src}
                 layout="intrinsic"
@@ -41,7 +41,7 @@ function ArtDetails() {
         
 
         {/* Column More art info and charity info */}
-        <div className={styles.column}>
+        <div className={styles.infoColumn}>
           <h4> Artist: { data.artist } </h4>
           <h4> This art supports: { data.charity } </h4>
         </div>
@@ -49,7 +49,7 @@ function ArtDetails() {
       </div>
 
       {/* Row: Less importiant details */}
-      <div lassName={styles.flexRow}>
+      <div className={styles.flexRow}>
 
         {/* Column: Art history */}
         <div>

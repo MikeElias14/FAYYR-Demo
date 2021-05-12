@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ['media.npr.org'],
+    domains: ['ipfs.pixura.io'],
   },
 }
