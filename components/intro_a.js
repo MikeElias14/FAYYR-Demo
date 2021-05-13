@@ -13,7 +13,7 @@ export default function IntroA() {
       <div className={styles.buttonWrapper}>
         <Button variant="outlined" color="secondary" className={styles.button}>
           <Link href='/market'> 
-            <buttonText> Start your collection </buttonText>
+            <buttontext> Start your collection </buttontext>
           </Link>
         </Button>
       </div>

@@ -20,7 +20,7 @@ export default function FeatureA() {
         <div className={styles.buttonWrapper}>
           <Button variant="outlined" color="secondary" className={styles.button}>
             <Link href='/market'> 
-              <buttonText> See collection </buttonText>
+              <buttontext> See collection </buttontext>
             </Link>
           </Button>
         </div>

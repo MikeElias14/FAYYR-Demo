@@ -20,7 +20,7 @@ export default function AboutB() {
         <div className={styles.buttonWrapper}>
           <Button variant="outlined" color="secondary" className={styles.button}>
             <Link href='/market'> 
-              <buttonText> Learn more </buttonText>
+              <buttontext> Learn more </buttontext>
             </Link>
           </Button>
         </div>

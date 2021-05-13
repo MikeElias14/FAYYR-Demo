@@ -1,3 +1,11 @@
+.wrapper:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 97%;
+  border-bottom: 1px solid black;
+}
+
 .flexColumnWrapper {
   display: flex;
   justify-content: center;

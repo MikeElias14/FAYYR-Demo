@@ -41,7 +41,8 @@ h2 {
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;  
-  margin: 16px 64px 0 0;
+  margin-top: 16px;
+  margin-bottom: 0px;
 }
 
 /* Prices, other importiant info */
@@ -93,6 +94,7 @@ h6 {
   letter-spacing: 0em;
   text-align: left;  
   margin-bottom: 16px;
+  margin-top: 8px;
 }
 
 /* Artists, other text */
@@ -107,8 +109,10 @@ p {
   margin-top: 8px;
 }
 
+
+
 /* Buttons used around the site */
-buttonText {
+buttontext {
   font-family: Raleway;
   font-size: 20px;
   font-style: normal;
@@ -116,4 +120,11 @@ buttonText {
   line-height: 23px;
   letter-spacing: 0.08em;
   text-align: center;
+}
+
+
+/* Matertial overrides */
+.MuiButton-outlinedPrimary {
+  background-color: white;
+  color: white;
 }

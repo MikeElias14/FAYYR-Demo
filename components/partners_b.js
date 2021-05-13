@@ -60,7 +60,7 @@ export default function PartnersB() {
 
       <div className={styles.buttonWrapper}>
         <Button variant="outlined" color="secondary" className={styles.button}>
-          <buttonText> See all </buttonText>
+          <buttontext> See all </buttontext>
         </Button>
       </div>
 

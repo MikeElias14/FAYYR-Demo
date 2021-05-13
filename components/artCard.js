@@ -30,7 +30,7 @@ class ArtCard extends React.Component {
         <div className={styles.info}>
           <div className={styles.inline}>
             <h2 className={styles.textOverflow}>{ data.title }</h2>
-            <h3>{ data.price }&nbsp;N&nbsp;</h3>
+            <h3> { data.price } &nbsp;N&nbsp;</h3>
           </div>
           
           <p> By @{ data.artist }</p>

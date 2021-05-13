@@ -6,21 +6,54 @@
   width: 100%;
 }
 
+.inline {
+  display: flex;
+}
+
 .flexRow {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 0 10%;
+  justify-content: flex-start;
   height: 100%;
   width: 100%;
+  margin-bottom: 8em;
 }
 
 .infoColumn {
-  padding: 0 5%;
-  width: 25%
+  margin: 1em 1em 1em 3em;
 }
 
 .artColumn {
-  padding: 0 5%;
-  width: 50%
+  margin: 1em;
+  min-width: 50%;
+}
+
+.desc {
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+.button {
+  height: 4em;
+  width: 20em;
+}
+
+.moreArt {
+  height: 100%;
+  justify-content: center;
+   -webkit-columns: 3;
+      -moz-columns: 3;
+           columns: 3;
+
+   -moz-column-fill: balance;
+        column-fill: balance;
+
+  column-gap: 3em;
+}
+
+/* We dont want cards split between two different columns */
+.card {
+  -webkit-column-break-inside: avoid; /* Chrome, Safari */
+  page-break-inside: avoid;           /* Theoretically FF 20+ */
+  break-inside: avoid-column;         /* IE 11 */
 }
