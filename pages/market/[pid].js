@@ -108,13 +108,13 @@ function ArtDetails() {
 
             <div className={styles.buttonContainer}>
               <Button variant="contained" color="secondary" className={styles.button}>
-                Donate Now
+                Buy Now
               </Button>
             </div>
 
             {/* Tabbed selection */}
             <Tabs value={value} onChange={handleChange}>
-              <Tab label="About the charity" {...createProps(0)} />
+              <Tab label="About the Artist" {...createProps(0)} />
               <Tab label="History" {...createProps(1)} />
             </Tabs>
 
