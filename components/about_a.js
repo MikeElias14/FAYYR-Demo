@@ -11,7 +11,7 @@ export default function AboutA() {
 
     <h3> what we do. </h3>
 
-    <div className={styles.flexColumnWrapper}>
+    <div className={styles.flexColumnContainer}>
       
       <div className={styles.flexColumn}>
         <h4> supporting charity </h4>

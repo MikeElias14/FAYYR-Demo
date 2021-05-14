@@ -12,6 +12,7 @@
   justify-content: space-between;
 }
 
+/* Max out titles at 2 lines */
 .textOverflow {
   overflow: hidden;
   text-overflow: ellipsis;

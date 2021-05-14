@@ -10,10 +10,10 @@ export default function IntroA() {
       <div className={styles.h1}>
         Art that makes <br/> a <i className={styles.i}>difference</i>
 
-      <div className={styles.buttonWrapper}>
+      <div className={styles.buttonContainer}>
         <Button variant="outlined" color="secondary" className={styles.button}>
           <Link href='/market'> 
-            <buttontext> Start your collection </buttontext>
+            <h7> Start your collection </h7>
           </Link>
         </Button>
       </div>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,600;1,400&display=swap');
 
-.wrapper {
+.container {
   margin-left: 6em;
 }
 .heading {
@@ -16,11 +16,11 @@
 }
 
 .info {
-  padding: 10em 0 0 1.5em;
+  padding: 15% 0 0 2%;
   width: 18em;
 }
 
-.buttonWrapper {
+.buttonContainer {
   margin: 2em 0 0 11em;
 }
 

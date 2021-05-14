@@ -19,6 +19,10 @@
   break-inside: avoid-column;         /* IE 11 */
 }
 
-.causeChip {
-  margin: 0 0.75em;
+.inline {
+  display: flex;
+}
+
+.chips {
+  margin: 0 0.75em 2em 0.75em;
 }

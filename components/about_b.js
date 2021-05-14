@@ -6,7 +6,7 @@ import styles from '../styles/AboutB.module.css';
 
 export default function AboutB() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.container}>
       <h1 className={styles.heading}>What we do. </h1>
       <div className={styles.backgroundA}>
 
@@ -17,10 +17,10 @@ export default function AboutB() {
           </p>
         </div>
 
-        <div className={styles.buttonWrapper}>
+        <div className={styles.buttonContainer}>
           <Button variant="outlined" color="secondary" className={styles.button}>
             <Link href='/market'> 
-              <buttontext> Learn more </buttontext>
+              <h7> Learn more </h7>
             </Link>
           </Button>
         </div>

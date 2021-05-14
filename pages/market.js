@@ -25,19 +25,22 @@ class Market extends React.Component {
 
         {/* Quick filter by cause */}
         <div>
-          <p> Causes:
+          <div className={styles.inline}>
+            <p>
+               Causes: 
+            </p>
 
             {causeData.map(data => (
-              <Chip label={data} className={styles.causeChip} />
+              <Chip key={data} label={data} className={styles.chips} />
             ))}
-          </p>
+          </div>
 
         </div>
 
         {/* Display Art */}
         <div className={styles.art}>
             {artData.map(data => (
-              <div className={styles.card}>
+              <div key={data.id} className={styles.card}>
                 <ArtCard data = {data}/>
               </div>
             ))}

@@ -18,8 +18,8 @@ class Header extends React.Component {
   render() {
     return (
      
-      // Wrapper allows for bottom line
-      <div className={styles.wrapper}>
+      // Container allows for bottom line
+      <div className={styles.container}>
 
         {/* Toolbar acts as flex container */}
         <Toolbar className={styles.toolbar}>
@@ -41,22 +41,22 @@ class Header extends React.Component {
           {/* Navigation - middle */}
           <div className={styles.navigation}>
 
-            <div className={styles.headerButton}>
-              <Button>
+            <div className={styles.buttonContainer}>
+              <Button className={styles.button}>
                 <Link href='/market'>
                   <h5> Market </h5>
                 </Link>
               </Button>
             </div>
 
-            <div className={styles.headerButton}>
-              <Button>
+            <div className={styles.buttonContainer}>
+              <Button className={styles.button}>
                 <h5> Charities </h5>
               </Button>
             </div>
 
-            <div className={styles.headerButton}>
-              <Button>
+            <div className={styles.buttonContainer}>
+              <Button className={styles.button}>
                 <h5> About </h5>
               </Button>
             </div>
@@ -64,7 +64,7 @@ class Header extends React.Component {
 
           {/* Search - left */}
           <div className={styles.search}>
-            <Button>
+            <Button className={styles.button}>
               <GoSearch size="1.5em"/>
             </Button>
           </div>

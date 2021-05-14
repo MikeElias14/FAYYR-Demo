@@ -1,4 +1,4 @@
-.wrapper:after {
+.container:after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -6,7 +6,7 @@
   border-bottom: 1px solid black;
 }
 
-.flexColumnWrapper {
+.flexColumnContainer {
   display: flex;
   justify-content: center;
   flex-direction: row;

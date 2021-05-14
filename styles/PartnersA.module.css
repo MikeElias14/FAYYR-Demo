@@ -1,4 +1,4 @@
-.wrapper {
+.container {
   margin-left: 6em;
 }
 
@@ -12,7 +12,7 @@
   width: 18em;
 }
 
-.buttonWrapper {
+.buttonContainer {
   margin-top: 2em;
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@
   height: 4em;
 }
 
-.flexColumnWrapper {
+.flexColumnContainer {
   display: flex;
   justify-content: center;
   flex-direction: row;

@@ -8,6 +8,7 @@
   background-size: cover;
 }
 
+/* This header is different from all the rest and not used anywhere else */
 .h1 {
   font-family: IBM Plex Serif;
   font-size: 80px;
@@ -20,6 +21,7 @@
   padding: 2em 1em 2em 1.3em;
 }
 
+/* Same with this, not exactly italic, different font and weight all together */
 .i {
   font-family: IBM Plex Serif;
   font-size: 80px;
@@ -30,7 +32,7 @@
   text-align: left;
 }
 
-.buttonWrapper {
+.buttonContainer {
   margin-left: 3em;
 }
 

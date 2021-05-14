@@ -6,12 +6,12 @@ import styles from '../styles/PartnersA.module.css';
 
 export default function PartnersA() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.container}>
 
       <h1> Our partners. </h1>
 
       {/* Row */}
-      <div className={styles.flexColumnWrapper}>
+      <div className={styles.flexColumnContainer}>
         
         <div className={styles.flexColumn}>
           <Image
@@ -43,7 +43,7 @@ export default function PartnersA() {
       </div>
 
       {/* Row */}
-      <div className={styles.flexColumnWrapper}>
+      <div className={styles.flexColumnContainer}>
         
         <div className={styles.flexColumn}>
           <Image
@@ -65,9 +65,9 @@ export default function PartnersA() {
 
       </div>
 
-      <div className={styles.buttonWrapper}>
+      <div className={styles.buttonContainer}>
         <Button variant="outlined" color="secondary" className={styles.button}>
-          <buttontext> See all </buttontext>
+          <h7> See all </h7>
         </Button>
       </div>
 

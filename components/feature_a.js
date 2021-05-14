@@ -6,7 +6,7 @@ import styles from '../styles/FeatureA.module.css';
 
 export default function FeatureA() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.container}>
       <h1> Featured Art. </h1>
       <div className={styles.backgroundA}>
 
@@ -17,10 +17,10 @@ export default function FeatureA() {
           </p>
         </div>
 
-        <div className={styles.buttonWrapper}>
+        <div className={styles.buttonContainer}>
           <Button variant="outlined" color="secondary" className={styles.button}>
             <Link href='/market'> 
-              <buttontext> See collection </buttontext>
+              <h7> See collection </h7>
             </Link>
           </Button>
         </div>

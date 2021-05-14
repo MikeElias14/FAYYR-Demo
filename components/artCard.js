@@ -20,7 +20,7 @@ class ArtCard extends React.Component {
         <Link href={`/market/${data.id}`}>
           <Image
             src={data.src}
-            layout="intrinsic"
+            layout="responsive"
             height={data.height}
             width={data.width}
             />

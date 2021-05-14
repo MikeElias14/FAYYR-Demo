@@ -8,14 +8,11 @@ import ArtCard from '../../components/artCard'
 
 // TODO: Using all data and choosing the correct id for now. Final implementation should pass the art object as props through the router.
 import artData from '../api/demoArt.json';
-import { Button } from '@material-ui/core';
-
+import { Button, Tabs, Tab, Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 
+
+// Tabs Helpers
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -29,11 +26,17 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box p={3}>
-          <Typography>{children}</Typography>
+          {children}
         </Box>
       )}
     </div>
   );
+}
+
+function createProps(index) {
+  return {
+    id: `tab-${index}`,
+  };
 }
 
 TabPanel.propTypes = {
@@ -41,13 +44,6 @@ TabPanel.propTypes = {
   index: PropTypes.any.isRequired,
   value: PropTypes.any.isRequired,
 };
-
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
-}
 
 
 // function component instead of Class since needs to use router hook
@@ -62,7 +58,6 @@ function ArtDetails() {
 
   // Tabs
   const [value, setValue] = React.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -79,23 +74,23 @@ function ArtDetails() {
         </p>
         </Link>
     
-      <div className={styles.wrapper}>
+      <div className={styles.container}>
 
         {/* Row: Art and its info */} 
         <div className={styles.flexRow}>
 
           {/* Column: Art itself */}
-          <div className={styles.artColumn}>
+          <div className={styles.art}>
             <Image
                   src={data.src}
-                  layout="intrinsic"
+                  layout="responsive"
                   height={data.height}
                   width={data.width}
                   />
           </div>
 
           {/* Column: Art info */}
-          <div className={styles.infoColumn}>
+          <div className={styles.info}>
             
               <h6> { data.title } </h6>
 
@@ -111,28 +106,32 @@ function ArtDetails() {
               <p> { data.desc } </p>
             </div>
 
-            <Button variant="contained" color="secondary" className={styles.button}>
-              Donate Now
-            </Button>
+            <div className={styles.buttonContainer}>
+              <Button variant="contained" color="secondary" className={styles.button}>
+                Donate Now
+              </Button>
+            </div>
 
             {/* Tabbed selection */}
-            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-              <Tab label="About the charity" {...a11yProps(0)} />
-              <Tab label="History" {...a11yProps(1)} />
+            <Tabs value={value} onChange={handleChange}>
+              <Tab label="About the charity" {...createProps(0)} />
+              <Tab label="History" {...createProps(1)} />
             </Tabs>
 
             <TabPanel value={value} index={0}>
-              <p><b> { data.charity } </b></p>
+              <div>
+                <p><b> { data.charity } </b></p>
 
-              <p>
-              Phasellus ut faucibus nisi. Ut a turpis varius, blandit lectus non, hendrerit justo. Phasellus posuere eros ante, in vestibulum justo viverra et. Nunc id urna sit amet nulla imperdiet vehicula.
-              </p>
+                <p>
+                Phasellus ut faucibus nisi. Ut a turpis varius, blandit lectus non, hendrerit justo. Phasellus posuere eros ante, in vestibulum justo viverra et. Nunc id urna sit amet nulla imperdiet vehicula.
+                </p>
 
-              <p><b> Learn More </b></p>
+                <p><b> Learn More </b></p>
+              </div>
             </TabPanel>
 
             <TabPanel value={value} index={1}>
-              NFT History... TODO
+             <p> NFT History... TODO </p>
             </TabPanel>
           </div>
           
@@ -144,7 +143,7 @@ function ArtDetails() {
           {/* Display Art */}
           <div className={styles.moreArt}>
               {demoArt.map(data => (
-                <div className={styles.card}>
+                <div key={data.id} className={styles.card}>
                   <ArtCard data = {data}/>
                 </div>
               ))}

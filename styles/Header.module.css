@@ -20,8 +20,12 @@
   align-items: center;
 }
 
-.headerButton {
-  margin: 0 1.5em 1em 1.5em;
+.buttonContainer {
+  margin: 1em 1.5em 1em 1.5em;
+}
+
+.button { 
+  height: 3em;
 }
 
 .search {

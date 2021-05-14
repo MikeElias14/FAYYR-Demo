@@ -1,4 +1,4 @@
-.wrapper {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,17 +19,20 @@
   margin-bottom: 8em;
 }
 
-.infoColumn {
+.art {
   margin: 1em 1em 1em 3em;
+  min-width: 40%;
 }
 
-.artColumn {
-  margin: 1em;
-  min-width: 50%;
+.info {
+  margin: 1em 1em 1em 3em;
 }
 
 .desc {
   margin-top: 1.5em;
+  margin-bottom: 2.5em;
+}
+.buttonContainer {
   margin-bottom: 2.5em;
 }
 
@@ -54,6 +57,6 @@
 /* We dont want cards split between two different columns */
 .card {
   -webkit-column-break-inside: avoid; /* Chrome, Safari */
-  page-break-inside: avoid;           /* Theoretically FF 20+ */
+  page-break-inside: avoid;           /* (maybe) FF 20+ */
   break-inside: avoid-column;         /* IE 11 */
 }
