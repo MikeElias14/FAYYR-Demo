@@ -51,7 +51,7 @@ class Header extends React.Component {
 
             <div className={styles.buttonContainer}>
               <Button className={styles.button}>
-                <h5> Artists </h5>
+                <h5> Charities </h5>
               </Button>
             </div>
 

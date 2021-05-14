@@ -114,7 +114,7 @@ function ArtDetails() {
 
             {/* Tabbed selection */}
             <Tabs value={value} onChange={handleChange}>
-              <Tab label="About the Artist" {...createProps(0)} />
+              <Tab label="About the Charity" {...createProps(0)} />
               <Tab label="History" {...createProps(1)} />
             </Tabs>
 
