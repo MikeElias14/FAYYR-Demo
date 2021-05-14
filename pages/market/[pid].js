@@ -131,7 +131,7 @@ function ArtDetails() {
             </TabPanel>
 
             <TabPanel value={value} index={1}>
-             <p> NFT History... TODO </p>
+             <p>  History about the art... TODO </p>
             </TabPanel>
           </div>
           

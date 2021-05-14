@@ -42,6 +42,7 @@
 }
 
 .moreArt {
+  margin-left: 3em;
   height: 100%;
   justify-content: center;
    -webkit-columns: 3;
